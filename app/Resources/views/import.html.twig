@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="jumbotron">
+        <div class="row">
+            <h2 class="col-xs-12 text-center">Importer des fichiers</h2>
+            <div class="col-md-8">
+                {{form(form)}}
+            </div>
+            <div class="col-md-4">
+                <div class="form-inline form-group">
+                    <label class="control-label">Nouvel album</label>
+                    {{ render(controller('AppBundle:Import:editAlbum', {'id': null})) }}
+                </div>
+                <div class="form-inline form-group">
+                    <label class="control-label">Nouveau tag</label>
+                    {{ render(controller('AppBundle:Import:editTag', {'id': null})) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

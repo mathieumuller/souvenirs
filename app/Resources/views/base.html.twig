@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('build/global.css') }}">
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <header id="header" class="header">
+        {% include 'menu.inc.html.twig' %}
+    </header>
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+        {% include 'flash-messages.inc.html.twig' %}
+        <script src="{{ asset('build/app.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+    <footer>
+
+    </footer>
+</html>

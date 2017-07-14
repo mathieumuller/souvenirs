@@ -1,0 +1,3 @@
+AppBundle\Entity\Picture:
+    type: entity
+    repositoryClass: "AppBundle\\Repository\\PictureRepository"

@@ -1,0 +1,7 @@
+{% set album = albumType.vars.value %}
+{{ form(
+    albumType,
+    {
+        "action": path('edit_album', {'id': album.id})
+    }
+) }}

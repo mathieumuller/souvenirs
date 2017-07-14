@@ -1,0 +1,8 @@
+/* customize some Bootstrap variables */
+$brand-primary: darken(#428bca, 20%);
+/* must be overriden because of the sass loader config (in webpack.config.json) */
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import '~bootstrap-select/dist/css/bootstrap-select.min.css';
+@import '~toastr/build/toastr.min.css';

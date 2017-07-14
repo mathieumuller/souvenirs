@@ -1,0 +1,7 @@
+<div class="flash-messages">
+	{% for label, messages in app.flashes(['warning', 'error', 'info', 'success']) %}
+	    {% for message in messages %}
+	        <i class="flash-message" data-method="{{ label }}" data-message="{{ message }}"></i>
+	    {% endfor %}
+	{% endfor %}
+</div>

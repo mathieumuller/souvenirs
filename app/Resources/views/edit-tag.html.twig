@@ -1,0 +1,7 @@
+{% set tag = tagType.vars.value %}
+{{ form(
+    tagType,
+    {
+        "action": path('edit_tag', {'id': tag.id})
+    }
+) }}
