@@ -5,7 +5,7 @@ AppBundle\Entity\Media:
         name: discr
         type: string
     discriminatorMap:
-        picture: picture
+        picture: Picture
         video: Video
     id:
         id:
